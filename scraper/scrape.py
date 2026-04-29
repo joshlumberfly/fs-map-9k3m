@@ -32,7 +32,7 @@ REGISTER_URL = f"{PUBLIC_HOST}/food-safety/food-safety-register-of-convictions"
 ROOT = Path(__file__).resolve().parent
 CACHE_PATH = ROOT / ".cache" / "geocode.json"
 OVERRIDES_PATH = ROOT / "address_overrides.json"
-OUTPUT_PATH = ROOT.parent / "web" / "convictions.json"
+OUTPUT_PATH = ROOT.parent / "docs" / "convictions.json"
 
 
 class _HTMLStripper(HTMLParser):

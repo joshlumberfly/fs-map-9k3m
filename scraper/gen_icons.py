@@ -1,10 +1,10 @@
 """Generate PWA app icons. Run once after edits; commit the PNGs.
 
 Outputs:
-- web/icon-192.png       (Android/PWA)
-- web/icon-512.png       (Android/PWA, large)
-- web/apple-touch-icon.png  (iOS home screen, 180x180)
-- web/favicon-32.png     (browser tab)
+- docs/icon-192.png       (Android/PWA)
+- docs/icon-512.png       (Android/PWA, large)
+- docs/apple-touch-icon.png  (iOS home screen, 180x180)
+- docs/favicon-32.png     (browser tab)
 """
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw
 
-WEB_DIR = Path(__file__).resolve().parent.parent / "web"
+WEB_DIR = Path(__file__).resolve().parent.parent / "docs"
 
 YELLOW = (250, 204, 21)        # warning yellow
 DARK = (24, 24, 27)             # near-black foreground

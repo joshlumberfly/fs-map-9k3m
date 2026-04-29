@@ -16,10 +16,10 @@ Not a commercial product. Deployed to a private (non-indexed) GitHub Pages URL a
 ```
 .
 ├── scraper/
-│   ├── scrape.py         # Fetch records → geocode → write web/convictions.json
+│   ├── scrape.py         # Fetch records → geocode → write docs/convictions.json
 │   ├── requirements.txt  # `requests` only
 │   └── .cache/           # Geocode cache (gitignored)
-└── web/
+└── docs/
     ├── convictions.json  # Generated; committed so the static site can fetch it
     └── ...               # (frontend lives here once built)
 ```
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 python scrape.py
 ```
 
-Output is written to `web/convictions.json`. Re-running uses the cached geocode results, so subsequent runs only hit Nominatim for new addresses. The Victorian register rolls over a 12-month window, so a weekly cron is a sensible cadence.
+Output is written to `docs/convictions.json`. Re-running uses the cached geocode results, so subsequent runs only hit Nominatim for new addresses. The Victorian register rolls over a 12-month window, so a weekly cron is a sensible cadence.
 
 ### Address overrides
 
