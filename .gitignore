@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+scraper/.cache/
+
+# Claude Code tooling (per-developer, not shared)
+.claude/
